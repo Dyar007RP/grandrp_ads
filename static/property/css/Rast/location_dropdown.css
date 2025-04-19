@@ -1,0 +1,33 @@
+/* Location Dropdown Styling */
+.location-dropdown {
+    font-size: 16px; /* Font size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    color: #000000; /* Text color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the content */
+    margin-bottom: 20px; /* Space below */
+    position: relative;
+    top: -210px; /* Move up/down */
+    left: 100px; /* Move left/right */
+}
+
+/* Dropdown Box */
+.location-dropdown select {
+    width: 200px; /* Set width */
+    height: 35px; /* Set height */
+    border: 1px solid black; /* Border */
+    text-align: center; /* Align text */
+    font-size: 16px; /* Font size */
+    font-family: "Times New Roman", Times, serif; /* Font family */
+    font-weight: bold; /* Bold text */
+    background-color: transparent; /* No background */
+    margin-top: 10px; /* Space above */
+    box-shadow: none; /* No shadow */
+}
+
+/* Remove shadow when focused */
+.location-dropdown select:focus {
+    outline: none; /* Remove outline */
+    border-color: #007BFF; /* Blue border on focus */
+    box-shadow: none; /* No shadow */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .category-button {
+            display: block;
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .category-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="{{ url_for('house_and_apartments') }}" class="category-button">House and Apartments</a>
+        <a href="{{ url_for('auto') }}" class="category-button">Auto</a>
+        <a href="{{ url_for('business') }}" class="category-button">Business</a>
+        <a href="{{ url_for('date_or_meetings') }}" class="category-button">Date and Meetings</a>
+        <a href="{{ url_for('work') }}" class="category-button">Work</a>
+        <a href="{{ url_for('others') }}" class="category-button">Others</a>
+    </div>
+</body>
+</html>

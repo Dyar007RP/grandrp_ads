@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/main.css') }}">
+
+
+
+<!-- Titles CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='auto/css/titles/title_box.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='auto/css/titles/house_and_apartments_title.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='auto/css/titles/selling.css') }}">
+
+
+
+
+<!-- Left Box CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Left Box/left_box.css') }}">
+<script src="{{ url_for('static', filename='auto/css/Left Box/JS/Left box Js.js') }}"></script>
+
+<!-- Right Box CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Left Box/right_box.css') }}">
+
+
+    <!-- Title of left box -->
+     <link rel="stylesheet" href="static/auto/css/Chap/auto-details-title.css">
+
+
+
+
+    <!-- Go to categories button box -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/go_to_categories.css') }}">
+    <!-- Go to house button box -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/titles/go_to_house.css') }}">
+
+
+   <!-- Main Switch Styling (e.g. Buying/Selling) -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/switch_box.css') }}">
+
+   <!-- Trade Text CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/trade text.css') }}">
+
+   <!-- Trade Toggle CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/trade toggle.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/Trade Mode.css') }}">
+   <!-- Trade Toggle JS -->
+   <script src="{{ url_for('static', filename='auto/js/Trade Mode Close S-B.js') }}"></script>
+   <!-- blocker result while trade -->
+   <script src="{{ url_for('static', filename='auto/js/block_trade_result_list.js') }}"></script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- Configuration -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/configuration_text.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/configuration_dropdown.css') }}">
+
+    <!-- Link to Light Sign CSS -->
+    <link rel="stylesheet" type="text/css" href="static/auto/css/Chap/007/0/light_sign.css" title="Light Sign">
+
+    <!-- Link to Light Sign JS -->
+    <script src="{{ url_for('static', filename='auto/js/007/0/light_sign_Js.js') }}"></script>
+
+
+
+
+
+
+    <!-- visual upgrade-->
+   <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/visual_upgrade_text.css') }}">
+   <!-- Visual Upgrade Toggle CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/visual-upgrade-toggle.css') }}">
+
+
+
+    <!-- Insurance Text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/insurance-text.css') }}">
+    <!-- Insurance Toggle CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/insurance-toggle.css') }}">
+
+
+    <!-- Tuning Parts Text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/tuning-parts-text.css') }}">
+    <!-- Tuning Parts Toggle CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/tuning-parts-toggle.css') }}">
+
+
+    <!-- Turbo Kit Text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/turbo-kit-text.css') }}">
+    <!-- Turbo Toggle CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/turbo-kit-toggle.css') }}">
+
+
+    <!-- Link for Drift Kit Text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/drift_kit_text.css') }}">
+    <!-- Link Title for Drift Kit toggle CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/drift_kit_toggle.css') }}">
+
+<!*******************************************************************************************************************************************>
+
+
+<!*************************************************************Second******************************************************************************>
+    <!-- Trade Hide All JS -->
+    <script src="{{ url_for('static', filename='auto/js/Trade hide all.js') }}"></script>
+
+
+    <!-- Link for Configuration Title Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/configuration_title_second.css') }}">
+
+
+    <!-- Link for Configuration Switch Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/configuration_switch_second.css') }}">
+
+
+    <!-- Link for Visual Upgrade Text Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/visual_upgrade_text_second.css') }}">
+    <!-- Link for Visual Upgrade Toggle Switch Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/visual-upgrade-toggle-second.css') }}">
+
+    <!-- Link for Insurance Text Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/insurance_text_second.css') }}">
+    <!-- Insurance Toggle Switch Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/insurance_toggle_switch_second.css') }}">
+
+
+    <!-- Link for Tuning Parts Text Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/tuning-parts-text-second.css') }}">
+    <!-- Tuning Parts Toggle Switch Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/tuning_parts_toggle_second.css') }}">
+
+
+    <!-- Turbo Kit Text Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/turbo_kit_text_second.css') }}">
+    <!-- Turbo Kit Toggle Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/turbo_kit_toggle_second.css') }}">
+
+
+    <!-- Drift Kit Text Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/drift_kit_text_second.css') }}">
+    <!-- Drift Kit Toggle Switch Second CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/007/sec/drift_kit_toggle_second.css') }}">
+
+
+
+
+
+
+
+
+
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+
+    <title>Vehicle Tabs</title>
+    <link rel="stylesheet" type="text/css" href="static/auto/css/Rast/car_Tab.css">
+    <link rel="stylesheet" type="text/css" href="static/auto/css/Rast/motorcycle_tab_button.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Rast/helicopter_Tab.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Rast/boat_Tab.css') }}"> <!-- Boat CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Rast/plane_Tab.css') }}"> <!-- Plane CSS -->
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Rast/stays in its active (clicked).css') }}">
+
+
+       <!-- Custom Alert Styles -->
+       <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Rast/Alert.css') }}">
+
+       <!-- Custom Alert JavaScript -->
+       <script src="{{ url_for('static', filename='auto/js/Alert Js.js') }}"></script>
+
+
+
+
+
+
+<!*******************************************************************************************************************************************>
+
+
+<title>Search bar</title>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<title>Search for a Car</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="static/auto/css/Rast/search bar_ text.css">
+<link rel="stylesheet" href="static/auto/css/Rast/search bar_box.css">
+
+
+<!-- JS -->
+
+<script src="{{ url_for('static', filename='auto/js/search_script.js') }}"></script>
+
+<!*******************************************************************************************************************************************>
+
+<link rel="stylesheet" type="text/css" href="static/auto/css/Rast/looking.css">
+<script src="{{ url_for('static', filename='auto/js/Looking_Script 2.js') }}"></script>
+
+
+
+<!*******************************************************************************************************************************************>
+
+
+    <script src="{{ url_for('static', filename='property/js/generate_script.js') }}"></script>
+   
+    <script src="{{ url_for('static', filename='property/js/reset_script.js') }}"></script>
+
+    <!-- Copy Button JavaScript -->
+    <script src="{{ url_for('static', filename='auto/js/copy_button_JS.js') }}"></script>
+
+    <!-- Choose Vehicle JavaScript -->    
+    <script src="{{ url_for('static', filename='auto/js/Choose_Vehicle.js') }}"></script>
+
+    <!-- Link Auto_generate.js -->
+    <script src="{{ url_for('static', filename='auto/js/Generated Script.js') }}"></script>
+
+
+    <!-- Link to the JavaScript file -->
+    <script src="/static/auto/js/stays in its (clicked).js" defer></script>
+
+
+
+<!*******************************************************************************************************************************************>
+
+
+
+
+
+
+    <!-- Features Title CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/features_title.css') }}">
+
+    <!-- Generate Button Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/generate-button.css') }}">
+
+    <!-- Result Box CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/result-box.css') }}">
+    <!-- Choose Result Box CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Rast/Choose car result.css') }}">
+
+
+
+    <!-- Copy Button Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/copy_button_Css.css') }}">
+
+
+
+    <!-- Reset Button CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/reset-button.css') }}">
+
+
+    
+
+    <!-- Price Input Box CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/price-box.css') }}">
+    <!-- Price Text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto/css/Chap/price-text.css') }}">
+
+
+    <!-- Dark Mode Toggle Button -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Dark mode/dark_mode.css') }}">
+</head>
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+<body>
+    <!-- Dark Mode Button -->
+    <button class="dark-mode-toggle">🌙</button>
+
+    <!-- Title Section -->
+    <div class="title-box">
+        <h1 class="house-title">AutoCar</h1>
+        <h2 class="selling-title">ROLEX</h2>
+   
+
+    <!-- Go to Categories Button -->
+    <button class="go-to-categories" onclick="window.location.href='/categories'">Go to Categories</button>
+    </div>  
+
+<!*******************************************************************************************************************************************>
+
+<a href="{{ url_for('house_and_apartments') }}">
+    <button class="go-to-house">Go to House</button>
+</a>
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!-- Left and Right Boxes -->
+<div class="left-box"></div>
+<div class="right-box"></div>
+
+
+<!*******************************************************************************************************************************************>
+<!-- Auto Details Title -->
+<div class="auto-details-title-container">
+    <h3 class="auto-details-title">Auto Details</h3>
+</div>
+
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+
+<!*******************************************************************************************************************************************>
+
+<div class="switch-container">
+    <div id="switchBox" class="selling" onclick="toggleSwitch()">Selling</div>
+</div>
+
+<!*******************************************************************************************************************************************>
+
+<!-- Trade Text -->
+<div class="trade-text-container">
+    <p class="trade-text">Trade</p>
+</div>
+
+<!-- Trade Toggle Switch -->
+<label class="trade-toggle-switch">
+    <input type="checkbox" id="trade-toggle"> <!-- Add ID to target in JS -->
+    <span class="trade-toggle-slider"></span>
+</label>
+<!*******************************************************************************************************************************************>
+
+<!-- Trade Mode Toggle -->
+<label class="trade-mode-toggle-switch">
+    <input type="checkbox" id="trade-mode-toggle">
+    <span class="trade-mode-toggle-slider"></span>
+</label>
+
+
+<!*******************************************************************************************************************************************>
+
+<!-- Configuration Title -->
+<div class="configuration-container">
+    <h3 class="configuration-title">Configuration</h3>
+</div>
+
+<!-- 3-Switch Plug Style Configuration -->
+<div class="configuration-switch">
+    <input type="radio" name="config" id="empty" value="" checked>
+    <label for="empty">Empty</label>
+
+    <input type="radio" name="config" id="partial" value="partial">
+    <label for="partial">Partial</label>
+
+    <input type="radio" name="config" id="full" value="full">
+    <label for="full">Full</label>
+</div>
+
+
+<div style="position: relative;">
+    <div id="signal-light" class="signal-light green"></div>
+</div>
+
+
+
+<!*******************************************************************************************************************************************>
+    <!-- Features Title Section -->
+    <div class="features-title-container">
+        <div class="features-title">Features</div>
+    </div>
+
+<!*******************************************************************************************************************************************>
+
+<!-- Visual Upgrade Text -->
+<div class="visual-upgrade-text-container">
+    <h3 class="visual-upgrade-text">Visual Upgrade</h3>
+</div>
+
+
+<!-- Visual Upgrade Toggle Switch -->
+<label class="visual-upgrade-switch">
+    <input type="checkbox" id="visual-upgrade-toggle"> <!-- Add ID to target in JS -->
+    <span class="visual-upgrade-slider"></span>
+</label>
+
+
+
+
+<!*******************************************************************************************************************************************>
+
+<!-- Insurance Text -->
+<div class="insurance-text-container">
+    <p class="insurance-text">Insurance</p>
+</div>
+
+<!-- Insurance Toggle Switch -->
+<label class="insurance-switch">
+    <input type="checkbox" id="insurance-toggle"> <!-- Add ID to target in JS -->
+    <span class="insurance-slider"></span>
+</label>
+
+
+<!*******************************************************************************************************************************************>
+<!-- Tuning Parts Text -->
+<div class="tuning-parts-text-container">
+    <p class="tuning-parts-text">Tuning Parts</p>
+</div>
+
+<!-- Tuning Parts Toggle -->
+<label class="tuning-parts-switch">
+    <input type="checkbox" id="tuningPartsToggle">
+    <span class="tuning-parts-slider"></span>
+</label>
+
+<!*******************************************************************************************************************************************>
+<!-- Turbo Kit Text -->
+<div class="turbo-kit-text-container">
+    <p class="turbo-kit-text">Turbo Kit</p>
+</div>
+
+<!-- Turbo Kit Toggle -->
+<label class="turbo-kit-switch">
+    <input type="checkbox" id="turbo-kit-toggle"> <!-- Add ID to target in JS -->
+    <span class="turbo-kit-slider"></span>
+</label>
+
+<!*******************************************************************************************************************************************>
+
+<!-- Drift Kit Text -->
+<div class="drift-kit-text-container">
+    <p class="drift-kit-text">Drift Kit</p>
+</div>
+
+<!-- Drift Kit Toggle Switch -->
+<label class="drift-kit-switch">
+    <input type="checkbox" id="driftKitToggle"> <!-- Add ID to target in JS -->
+    <span class="drift-kit-slider"></span>
+</label>
+
+<!*******************************************************************************************************************************************>
+
+<!-- Configuration Title Second -->
+<div class="configuration-title-second-container">
+    <h3 class="configuration-title-second">Configuration</h3>
+</div>
+
+
+<div class="modern-toggle-group">
+    <input type="radio" name="config-2" id="config-none" value="" checked>
+    <label for="config-none">Empty</label>
+
+    <input type="radio" name="config-2" id="config-partial" value="partial">
+    <label for="config-partial">Partial</label>
+
+    <input type="radio" name="config-2" id="config-full" value="full">
+    <label for="config-full">Full</label>
+</div>
+
+
+<!*******************************************************************************************************************************************>
+<!-- Visual Upgrade Text Second -->
+<div class="visual_upgrade_text_container_second">
+    <h3 class="visual_upgrade_text_second">Visual Upgrade</h3>
+</div>
+
+<!-- Visual Upgrade Toggle Switch Second -->
+<label class="visual-upgrade-switch-second">
+    <input type="checkbox" id="visual-upgrade-toggle-second"> <!-- Add ID to target in JS -->
+    <span class="visual-upgrade-slider-second"></span>
+</label>
+
+
+<!*******************************************************************************************************************************************>
+<!-- Insurance Text Second -->
+<div class="insurance-text-container-second">
+    <p class="insurance-text-second">Insurance</p>
+</div>
+
+<!-- Insurance Toggle Switch Second -->
+<label class="insurance-switch-second">
+    <input type="checkbox" id="insurance-toggle-second"> <!-- Add ID to target in JS -->
+    <span class="insurance-slider-second"></span>
+</label>
+
+<!*******************************************************************************************************************************************>
+<!-- Tuning Parts Text Second -->
+<div class="tuning-parts-text-container-second">
+    <p class="tuning-parts-text-second">Tuning Parts</p>
+</div>
+
+<!-- Tuning Parts Toggle Second -->
+<label class="tuning-parts-switch-second">
+    <input type="checkbox" id="tuningPartsToggleSecond">
+    <span class="tuning-parts-slider-second"></span>
+</label>
+
+
+<!*******************************************************************************************************************************************>
+<!-- Turbo Kit Text Second -->
+<div class="turbo-kit-text-container-second">
+    <p class="turbo-kit-text-second">Turbo Kit</p>
+</div>
+
+<!-- Turbo Kit Toggle Second -->
+<label class="turbo-kit-switch-second">
+    <input type="checkbox" id="turbo-kit-toggle-second"> <!-- Add ID to target in JS -->
+    <span class="turbo-kit-slider-second"></span>
+</label>
+
+<!*******************************************************************************************************************************************>
+<!-- Drift Kit Text Second -->
+<div class="drift-kit-text-container_second">
+    <p class="drift-kit-text_second">Drift Kit</p>
+</div>
+
+<!-- Drift Kit Toggle Switch Second -->
+<label class="drift-kit-switch-second">
+    <input type="checkbox" id="drift-kit-toggle-second"> <!-- Add ID to target in JS -->
+    <span class="drift-kit-slider-second"></span>
+</label>
+
+
+
+
+
+
+<!*******************************************************************************************************************************************>
+
+<!-- Search Title -->
+<div class="search-text">Search</div>
+
+<!-- Search Input & Results -->
+<div class="search-input-container">
+    <form id="search-form">
+        <input type="text" id="search" placeholder="Type to search..." autocomplete="off">
+    </form>
+    <ul id="results"></ul>
+</div>
+
+
+
+
+
+<!*******************************************************************************************************************************************>
+
+<!-- Looking Search Input & Results -->
+<div class="looking-search-input-container">
+    <form id="search-form">
+        <input type="text" id="looking-search" placeholder="Vehicle num. 2 ..." autocomplete="off">
+    </form>
+    <ul id="looking-results"></ul>
+</div>
+
+
+<!*******************************************************************************************************************************************>
+
+
+
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+<!-- ✅ Display selected car model -->
+<div id="selected-car" style="margin-top: 10px; font-weight: bold;"></div>
+
+
+<!*******************************************************************************************************************************************>
+<button class="tab-button car-tab-button" onclick="activateTab(this)">car</button>
+<button class="tab-button helicopter-tab-button" onclick="activateTab(this)">helicopter</button>
+<button class="tab-button plane-tab-button" onclick="activateTab(this)">plane</button>
+<button class="tab-button motorcycle-tab-button" onclick="activateTab(this)">motorcycle</button>
+<button class="tab-button boat-tab-button" onclick="activateTab(this)">boat</button>
+
+
+
+
+
+<!*******************************************************************************************************************************************>
+<div id="custom-alert" class="alert hidden">
+    <div id="custom-alert-top" class="alert-top"></div>
+    <div id="custom-alert-bottom" class="alert-bottom"></div>
+</div>
+
+
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!-- Price Text -->
+    <div class="price-text">Price</div>
+
+<!-- Price Input Box --> 
+<div class="price-box-container">
+    <input type="number" id="price-box" placeholder="Enter Price">
+</div>
+
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+<!-- Generate Button -->
+<button class="generate-button">Generate</button>
+
+<!-- Reset Button -->
+<button class="reset-button" onclick="resetForm()">RESET</button>
+
+
+<!-- Result Box -->
+<div class="result-box">
+    <p id="result-text">Your copied result will appear here!</p>
+</div>
+
+<!-- Copy Button -->
+<button id="copy-button" class="copy-button">Copy</button>
+
+
+
+
+
+</body>
+</html>
+

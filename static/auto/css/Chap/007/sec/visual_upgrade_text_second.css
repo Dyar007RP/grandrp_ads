@@ -1,0 +1,14 @@
+/* Visual Upgrade Text - Clean and Aligned */
+.visual_upgrade_text_second {
+    position: absolute;             /* Absolute for unified layout */
+    top: 500px;                     /* Unified top */
+    left: 950px;                   /* Unified left */
+    pointer-events: none;          /* Prevents it from blocking other elements */
+    z-index: 1;                     /* Below interactive elements */
+    
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;              /* Align text to the left */
+}

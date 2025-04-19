@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House and Apartments</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/main.css') }}">
+
+    <!-- Titles CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/title_box.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/house_and_apartments_title.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/selling.css') }}">
+    
+    <!-- Buttons CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/go_categories.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/go_buying.css') }}">
+
+    <!-- Page Layout & Styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/layout/page_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/layout/container.css') }}">
+
+    <!-- Down Box Styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Left Box/left_box.css') }}">
+
+    <!-- Title of left box -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/property_details_title.css') }}">
+
+    <!-- Go to Buying button box -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/go_to_buying.css') }}">
+
+    <!-- Go to categories button box -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/go_to_categories.css') }}">
+
+    <!-- Go to Auto button box -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/titles/Go to Auto btn.css') }}">
+
+ 
+    <!-- Switch Box -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/switch_box.css') }}">
+
+    <!-- Number of Properties CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/number_of_properties.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/number_of_properties_dropdown.css') }}">
+
+    <!-- Property Type CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/property_type.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/property_type_dropdown.css') }}">
+
+    <!-- Property Number CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/property_number.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/checkbox_number.css') }}">
+
+    <!-- Second Property Number CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/second_property_number.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/second_property_checkbox.css') }}">
+
+    <!-- JavaScript Files -->
+    <script src="{{ url_for('static', filename='property/js/toggle_second_property.js') }}"></script>
+    <script src="{{ url_for('static', filename='property/js/generate_script.js') }}"></script>
+    <script src="{{ url_for('static', filename='property/js/closing_garden_in_AP.js') }}"></script>
+    <script src="{{ url_for('static', filename='property/js/reset_script.js') }}"></script>
+    <!-- Copy Button JavaScript -->
+    <script src="{{ url_for('static', filename='property/js/copy_button.js') }}"></script>
+    <!-- luck-in-buying -->
+    <script src="{{ url_for('static', filename='property/js/luck-in-buying.js') }}"></script>
+    <script src="{{ url_for('static', filename='property/js/lock_property_checkbox.js') }}"></script>
+
+    <!-- Features Title CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/Features_title.css') }}">
+
+    <!-- Garden Section CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/garden.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/Garden Toggle Switch (ON-OFF).css') }}">
+
+    <!-- Warehouse (w.h.) CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/Warehouse.css') }}">
+    <!-- Warehouse (w.h.) dropdown (🔽) CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/w.h dropdown.css') }}">
+ 
+    <!-- Garage (g.s.) CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/garage.css') }}">
+    <!-- Garage ( g.s.) dropdown (🔽) CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Chap/garage_dropdown.css') }}">
+
+    <!-- Right Box CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Left Box/right_box.css') }}">
+
+    <!-- additional features CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/additional_features_title.css') }}">
+
+    <!-- Custom interior text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/Custom Interior.css') }}">
+    <!-- Custom interior Toggle CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/custom_interior_toggle.css') }}">
+
+    <!-- insurance CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/insurance_text.css') }}">
+    <!-- insurance_ TOGGLE CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/insurance_toggle.css') }}">
+
+    <!-- helipad_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/helipad_text.css') }}">
+    <!-- helipad_ TOGGLE CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/Helipad toggle.css') }}">
+
+    <!-- tennis_court_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/tennis_court_text.css') }}">
+    <!-- tennis_court_ TOGGLE CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/tennis_court_toggle.css') }}">
+
+    <!-- long_driveway_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/long_driveway_text.css') }}">
+    <!-- long_driveway_ TOGGLE CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/long_driveway_toggle.css') }}">
+
+    <!-- swimming_pool_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/swimming_pool_text.css') }}">
+    <!-- swimming_pool_ TOGGLE CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/swimming_pool_toggle.css') }}">
+
+    <!-- Location& price_title_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/location_and_price_title.css') }}">
+
+    <!-- view_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/view_text.css') }}">
+    <!-- view_Droopdown CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/view_dropdown.css') }}">
+
+    <!-- location_prefix_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/location_prefix_text.css') }}">
+    <!-- location_prefix_Droopdown CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/location_prefix_dropdown.css') }}">
+
+    <!-- Locations_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/locations_text.css') }}">
+    <!-- location_Droopdown CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/location_dropdown.css') }}">
+
+    <!-- Generate Button Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/generate_button.css') }}">
+
+    <!-- Result Box Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/result_box.css') }}">
+
+    <!-- General Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/styles.css') }}">
+
+    <!-- Reset Button Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/reset_button.css') }}">
+
+    <!-- Copy Button Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/copy_button.css') }}">
+
+    <!-- Reset button CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/reset_button.css') }}">
+
+    <!-- price_text CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/price_text.css') }}">
+
+    <!-- price_Box CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Rast/price_box.css') }}">
+
+    <!-- Dark Mode Toggle Button -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='property/css/Dark mode/dark_mode.css') }}">
+</head>
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+<body>
+    <!-- Dark Mode Button -->
+    <button class="dark-mode-toggle">🌙</button>
+
+    <!-- Title Section -->
+    <div class="title-box">
+        <h1 class="house-title">House and Apartments</h1>
+        <h2 class="selling-title">Selling</h2>
+
+    <!-- Go to Buying Button -->
+   
+
+    <!-- Go to Categories Button -->
+    <button class="go-to-categories" onclick="window.location.href='/categories'">Go to Categories</button>
+    </div>  
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+    <!-- Left and Right Boxes -->
+    <div class="left-box"></div>
+
+<!*******************************************************************************************************************************************>
+
+<!*******************************************************************************************************************************************>
+<a href="{{ url_for('auto') }}" class="go-to-auto-button">Go to Auto</a>
+
+<!*******************************************************************************************************************************************>
+
+    <!-- Left and Right Boxes -->
+    <div class="left-box"></div>
+
+<!*******************************************************************************************************************************************>
+    <!-- Property Details Title -->
+    <div class="property-details-title-container">
+        <h3 class="property-details-title">Property Details</h3>
+    </div>
+
+<!*******************************************************************************************************************************************>
+
+<div class="switch-container">
+    <div id="switchBox" class="selling" onclick="toggleSwitch()">Selling</div>
+</div>
+
+<!-- Number of Properties Section -->
+<div class="number-of-properties-container">
+    <h3 class="number-of-properties-title">Number of Properties</h3>
+    <div class="property-dropdown">
+        <select id="property">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+    </div>
+</div>
+
+<!-- Property Type Section -->
+<div class="property-type-container">
+    <h3 class="property-type-title">Property Type</h3>
+</div>
+
+<div class="property-type-dropdown">
+    <select id="property_type">
+        <option value="house">House</option>
+        <option value="apartment">Apartment</option>
+    </select>
+</div>
+
+<!-- Property Number Section -->
+<div class="property-number-container">
+    <h3 class="property-number-title">Property Number</h3>
+</div>
+
+<!-- Checkbox with Number Input -->
+<div class="checkbox-number-box-container">
+    <input type="number" id="property-number-input" placeholder="Enter a number">
+</div>
+
+<!-- Second Property Number Section -->
+<div class="second-property-number-container">
+    <h3 class="second-property-number-title">Second Property Number</h3>
+</div>
+
+<!-- Second Property Number Input Box -->
+<div class="checkbox-second-property-box-container">
+    <input type="number" id="second-property-number-input" placeholder="Enter a number" disabled>
+</div>
+
+<!*******************************************************************************************************************************************>
+    <!-- Features Title Section -->
+    <div class="features-title-container">
+        <div class="features-title">Features</div>
+    </div>
+
+   <p class="garden-text">Garden</p>
+
+<label class="switch">
+    <input type="checkbox" id="garden-toggle">
+    <span class="slider"></span>
+</label>
+
+
+<!*******************************************************************************************************************************************>
+<p class="warehouse-text">Warehouse (W.H.)</p>
+
+<div class="warehouse-dropdown-container">
+    <select id="warehouse-select" class="warehouse-dropdown">
+        <option value="empty">Empty</option>
+        <option value="3">3 w.h.</option>
+        <option value="4">4 w.h.</option>
+        <option value="5">5 w.h.</option>
+    </select>
+</div>
+
+
+<!*******************************************************************************************************************************************>
+<p class="garage-text">Garage (g.s.)</p>
+
+<div class="garage-dropdown-container">
+    <select id="garage-select" class="garage-dropdown">
+        <option value="empty">Empty</option>
+        <option value="2">2</option>
+        <option value="5">5</option>
+        <option value="9">9</option>
+        <option value="25">25</option>
+    </select>
+</div>
+
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+
+<!-- Right Box Container -->
+<div class="right-box">
+    
+    <!-- Additional Features Title Container -->
+<div class="additional-features-container">
+    <p class="additional-features-title">Additional Features</p>
+</div>
+
+<!*******************************************************************************************************************************************>
+
+<div class="custom-interior-container">
+    <p class="custom-interior-title">Custom Interior</p>
+</div>
+
+<!-- Custom Interior Toggle -->
+<label class="custom-interior-switch">
+    <input type="checkbox" id="custom-interior-toggle">  <!-- Add this ID -->
+    <span class="custom-interior-slider"></span>
+</label>
+
+
+
+<!*******************************************************************************************************************************************>
+
+<!-- Insurance Text -->
+<div class="insurance-text-container">
+    <p class="insurance-text">Insurance</p>
+</div>
+
+<!-- Insurance Toggle Switch -->
+<label class="insurance-switch">
+    <input type="checkbox" id="insurance-toggle"> <!-- Add ID to target in JS -->
+    <span class="insurance-slider"></span>
+</label>
+
+
+<!*******************************************************************************************************************************************>
+
+<!-- Helipad Text -->
+<div class="helipad-text">Helipad</div>
+
+<!-- Helipad Toggle Switch -->
+<label class="helipad-switch">
+    <input type="checkbox" id="helipad-toggle"> <!-- Add ID to target in JS -->
+    <span class="helipad-slider"></span>
+</label>
+
+<!*******************************************************************************************************************************************>
+
+<!-- Tennis Court Section -->
+<div class="tennis-court-container">
+    <p class="tennis-court-text">Tennis Court</p>
+</div>
+
+<!-- Tennis Court Toggle Switch -->
+<label class="tennis-court-switch">
+    <input type="checkbox" id="tennis-court-toggle">
+    <span class="tennis-court-slider"></span>
+</label>
+
+
+
+<!*******************************************************************************************************************************************>
+<!-- Long Driveway Section -->
+<div class="long-driveway-text">Long Driveway</div>
+
+<!-- Long Driveway Toggle Switch -->
+<label class="long-driveway-switch">
+    <input type="checkbox" id="long-driveway-toggle">
+    <span class="long-driveway-slider"></span>
+</label>
+
+
+<!*******************************************************************************************************************************************>
+<!-- Swimming Pool Section -->
+<div class="swimming-pool-text-container">
+    <div class="swimming-pool-text">Swimming Pool</div>
+</div>
+
+<!-- Swimming Pool Toggle Switch -->
+<label class="swimming-pool-switch">
+    <input type="checkbox" id="swimming-pool-toggle">
+    <span class="swimming-pool-slider"></span>
+</label>
+
+
+<!*******************************************************************************************************************************************>
+<div class="location-price-container">
+    <span class="location-price-title">Location & Price</span>
+</div>
+
+
+<!*******************************************************************************************************************************************>
+
+
+<div class="view-text-container">
+    <div class="view-text">View</div>
+</div>
+
+<div class="view-dropdown">
+    <select id="view-dropdown">
+        <option value="">Select a View</option>
+        <option value="nice view">Nice View</option>
+        <option value="beautiful view">Beautiful View</option>
+        <option value="great view">Great View</option>
+        <option value="good view">Good View</option>
+    </select>
+</div>
+
+
+
+
+<!*******************************************************************************************************************************************>
+<div class="location-prefix-container">
+    <span class="location-prefix-text">Location Prefix</span>
+</div>
+
+<div class="location-prefix-dropdown">
+    <select id="location-prefix" name="location-prefix">
+        <option value="">Select Prefix</option>
+        <option value="in">In</option>
+        <option value="near">Near</option>
+    </select>
+</div>
+
+<!*******************************************************************************************************************************************>
+
+<div class="locations-text-container">
+    <span class="locations-text">Locations</span>
+</div>
+
+<div class="location-dropdown">
+    <select id="location" name="location">
+<option value="">Select Location</option>
+<option value="Auto Salon">Auto Salon</option>
+<option value="Bahama Mamas">Bahama Mamas</option>
+<option value="Banham Canyon">Banham Canyon</option>
+<option value="Capitol">Capitol</option>
+<option value="The Casino">The Casino</option>
+<option value="Cayo Perico Island">Cayo Perico Island</option>
+<option value="Chumash">Chumash</option>
+<option value="The Church">The Church</option>
+<option value="Del Perro">Del Perro</option>
+<option value="Diamond Bar">Diamond Bar</option>
+<option value="Downtown Vinewood">Downtown Vinewood</option>
+<option value="Eclipse Tower">In Eclipse Tower</option>
+<option value="El Burro Heights">El Burro Heights</option>
+<option value="Fight Club">Fight Club</option>
+<option value="Hospital">Hospital/Sandy Hospital</option>
+<option value="LifeInvader">LifeInvader</option>
+<option value="Little Seoul">Little Seoul</option>
+<option value="Mirror Park">Mirror Park</option>
+<option value="Pacific Bluffs Country Club">Pacific Bluffs Country Club</option>
+<option value="Paleto Bay">Paleto Bay</option>
+<option value="Pillbox Hill">Pillbox Hill</option>
+<option value="Postal">Postal</option>
+<option value="Rancho">Rancho</option>
+<option value="Residential Complex">Residential Complex</option>
+<option value="Richards Majestic">In Richards Majestic</option>
+<option value="Richman">Richman</option>
+<option value="Rockford Hills">Rockford Hills</option>
+<option value="Sandy Shores">Sandy Shores</option>
+<option value="Stock Exchange">Stock Exchange</option>
+<option value="Tequi-La-La Bar">Tequi-La-La Bar</option>
+<option value="Vanilla Unicorn Bar">Vanilla Unicorn Bar</option>
+<option value="Vespucci Canals">Vespucci Canals</option>
+<option value="Vinewood Hills">Vinewood Hills</option>
+<option value="West Vinewood">West Vinewood</option>
+<option value="airport">airport</option>
+<option value="beach">beach</option>
+<option value="beach market">beach market</option>
+<option value="city">city</option>
+<option value="fire station">fire station</option>
+<option value="ghetto">ghetto</option>
+<option value="mall">mall</option>
+<option value="post office">post office</option>
+<option value="stadium">stadium</option>
+<option value="train station">train station</option>
+
+    </select>
+</div>
+
+<!*******************************************************************************************************************************************>
+    <!-- Price Text -->
+    <div class="price-text">Price</div>
+
+<!-- Price Input Box --> 
+<div class="price-box-container">
+    <input type="number" id="price-box" placeholder="Enter Price">
+</div>
+
+
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!*******************************************************************************************************************************************>
+<!-- Generate Button -->
+<button class="generate-button">Generate</button>
+
+<!-- Reset Button -->
+<button class="reset-button" onclick="resetForm()">RESET</button>
+
+
+<!-- Result Box -->
+<div class="result-box">
+    <p id="result-text">Your copied result will appear here!</p>
+</div>
+
+<!-- Copy Button -->
+<button class="copy-button">Copy</button>
+
+
+
+
+</body>
+</html>
+

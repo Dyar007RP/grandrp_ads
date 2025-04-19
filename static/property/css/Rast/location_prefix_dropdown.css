@@ -1,0 +1,33 @@
+/* Location Prefix Dropdown Styling */
+.location-prefix-dropdown {
+    font-size: 16px;               /* Font size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    color: #000000;                /* Text color */
+    font-weight: bold;             /* Bold text */
+    text-align: center;            /* Center the content */
+    margin-bottom: 20px;           /* Space below */
+    position: relative;
+    top: -165px;                    /* Adjust vertical position */
+    left: 100px;                  /* Adjust horizontal position */
+}
+
+/* Dropdown Box Size */
+.location-prefix-dropdown select {
+    width: 100px;                  /* Width */
+    height: 30px;                  /* Height */
+    border: 1px solid black;       /* Border */
+    text-align: center;            /* Center text */
+    font-size: 16px;               /* Font size */
+    font-family: "Times New Roman", Times, serif; /* Font */
+    font-weight: bold;             /* Bold text */
+    background-color: transparent; /* No background */
+    margin-top: 10px;              /* Space above */
+    box-shadow: none;              /* Remove shadow */
+}
+
+/* Remove shadow when the dropdown is focused */
+.location-prefix-dropdown select:focus {
+    outline: none;                 /* Remove default outline */
+    border-color: #007BFF;         /* Border color on focus */
+    box-shadow: none;              /* Remove shadow */
+}

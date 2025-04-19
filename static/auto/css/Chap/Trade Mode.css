@@ -1,0 +1,42 @@
+/* Trade Mode Toggle Switch Styling */
+.trade-mode-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    top: 60px;
+    left: 505px;
+}
+
+.trade-mode-toggle-switch input {
+    display: none;
+}
+
+.trade-mode-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #bbb;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.trade-mode-toggle-slider:before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .trade-mode-toggle-slider {
+    background-color: #ff9800; /* Orange when ON */
+}
+
+input:checked + .trade-mode-toggle-slider:before {
+    transform: translateX(30px);
+}

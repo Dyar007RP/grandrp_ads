@@ -1,0 +1,23 @@
+/* Custom Interior Text Styling */
+.custom-interior-container {
+    font-size: 16px;                           /* Font size */
+    font-family: "Times New Roman", Times, serif; /* Font family */
+    color: #000000;                            /* Black text color */
+    font-weight: bold;                         /* Bold text */
+    text-align: center;                        /* Center the content */
+    margin-bottom: 20px;                       /* Space below */
+    position: relative;
+    top: 5px;                                /* Adjust vertical position */
+    left: -220px;                              /* Adjust horizontal position */
+}
+
+/* Custom Interior Title Styling */
+.custom-interior-title {
+    width: 100%;                               /* Full width */
+    font-size: 20px;                           /* Title font size */
+    font-family: "Times New Roman", Times, serif; /* Font family */
+    color: #000000;                            /* Black text color */
+    font-weight: bold;                         /* Bold text */
+    text-align: center;                        /* Center the title text */
+    margin-bottom: 20px;                       /* Add margin at the bottom */
+}

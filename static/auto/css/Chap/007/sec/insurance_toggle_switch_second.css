@@ -1,0 +1,46 @@
+/* Insurance Toggle Switch Styling - FIXED */
+.insurance-switch-second {
+    position: absolute;    /* ⬅️ This removes it from normal flow */
+    top: 560px;           /* Adjust vertical position as needed */
+    left: 1200px;          /* Adjust horizontal position as needed */
+    display: inline-block;
+    width: 120px;          /* Toggle width */
+    height: 30px;          /* Toggle height */
+    z-index: 10;           /* Make sure it stays on top & clickable */
+}
+
+
+.insurance-switch-second input { 
+    display: none;
+}
+
+/* Toggle Slider */
+.insurance-slider-second {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.insurance-slider-second:before {
+    content: "";
+    position: absolute;
+    height: 24px;  /* Toggle circle size */
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* When checked, move the toggle to the right */
+input:checked + .insurance-slider-second {
+    background-color: #4CAF50; /* Green when ON */
+}
+
+input:checked + .insurance-slider-second:before {
+    transform: translateX(30px);  /* Move toggle circle */
+}

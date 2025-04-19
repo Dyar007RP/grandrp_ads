@@ -1,0 +1,16 @@
+/* Tuning Parts Text Styling - Clean and Unified */
+.tuning-parts-text-container-second {
+    position: absolute;         /* Consistent placement */
+    top: 580px;                 /* Unified top position */
+    left: 950px;                   /* Unified left */
+    text-align: left;           /* Align text to the left */
+    pointer-events: none;       /* Avoid blocking clicks */
+    z-index: 1;                 /* Behind interactive elements */
+}
+
+.tuning-parts-text-second {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #000000;
+}

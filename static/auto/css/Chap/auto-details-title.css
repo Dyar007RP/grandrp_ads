@@ -1,0 +1,37 @@
+/* === Auto Details Title Container === */
+.auto-details-title-container {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    color: #007bff;
+    font-weight: bold;
+    text-align: left;                /* Align to left */
+    margin-bottom: 20px;
+    position: relative;
+    top: 45px;
+    left: 290px;                      /* Positive value for consistent layout */
+}
+
+/* === Auto Details Title Text === */
+.auto-details-title-container .auto-details-title {
+    width: 100%;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: #007bff;
+    font-weight: bold;
+    text-align: left;               /* Align to left */
+    margin-bottom: 20px;
+    animation: lightFlicker 3s infinite;
+}
+
+/* === Flicker Animation === */
+@keyframes lightFlicker {
+    0%, 100% { opacity: 1; }
+    25% { opacity: 0.5; }
+    50% { opacity: 0; }
+    75% { opacity: 0.5; }
+}
+
+/* === Hover Flicker Boost === */
+.auto-details-title-container .auto-details-title:hover {
+    animation: lightFlicker 1.5s infinite;
+}

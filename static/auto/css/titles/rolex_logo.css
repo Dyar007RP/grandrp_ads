@@ -1,0 +1,24 @@
+/* Rolex Logo Styling */
+.rolex-logo {
+    position: absolute;
+    top: 135px;                  /* Adjust logo position */
+    left: 20px;                 /* Move left */
+    opacity: 0;                  /* Initially hidden */
+}
+
+/* Smaller Logo Size */
+.rolex-logo img {
+    width: 100px;                 /* Adjust logo size */
+    height: auto;                /* Maintain aspect ratio */
+}
+
+/* Light Turn On & Off Animation */
+@keyframes lightEffect {
+    0% { opacity: 0; }           /* Logo starts off */
+    50% { opacity: 1; }          /* Logo turns on */
+    100% { opacity: 0; }         /* Logo turns off again */
+}
+
+.rolex-logo {
+    animation: lightEffect 2s infinite;  /* Light effect */
+}

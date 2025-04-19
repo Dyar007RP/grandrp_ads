@@ -1,0 +1,12 @@
+/* Trade Text Styling */
+.trade-text {
+    font-size: 20px;                         /* Title font size */
+    font-family: "Times New Roman", Times, serif; /* Font family */
+    color: #000000;                          /* Black color */
+    font-weight: bold;                       /* Bold text */
+    text-align: left;                      /* Centered text */
+    margin-bottom: 20px;                     /* Space below */
+    position: relative;                      /* Allows positioning */
+    top: 110px;                              /* Move Down */
+    left: 355px;                             /* Move Right */
+}

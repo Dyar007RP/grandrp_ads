@@ -1,0 +1,26 @@
+/* Go to Categories Button Style - Absolute Positioned */
+.go-to-categories {
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;                         /* Left-align text */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: auto;
+    display: inline-block;
+
+    /* Absolute Positioning */
+    position: absolute;
+    top: 50px;                                /* Distance from top */
+    left: 20px;                             /* Distance from right */
+    z-index: 0;                              /* Keep it above others */
+}
+
+/* Hover Effect */
+.go-to-categories:hover {
+    background-color: darkgreen;
+}

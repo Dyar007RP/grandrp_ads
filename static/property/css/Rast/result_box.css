@@ -1,0 +1,35 @@
+/* Result Box Styles */
+.result-box {
+    background-color: #f0f0f0;       /* Light gray background */
+    color: black;                     /* Black text color */
+    padding: 20px;                    /* Padding inside the box */
+    border-radius: 8px;               /* Rounded corners */
+    border: 1px solid #ddd;           /* Light border */
+    margin: 20px auto;                /* Center the box horizontally */
+    width: 73%;                        /* Adjust width as needed */
+    max-width: 600px;                 /* Set a max width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Light shadow */
+
+    /* Movement Settings */
+    position: relative;               /* Allows movement */
+    top: -330px;                        /* Moves down */
+    left: -697px;                       /* Moves right */
+
+    /* Text Settings */
+    display: flex;                    /* Use flexbox for alignment */
+    flex-direction: column;           /* Stack text inside vertically */
+    justify-content: center;          /* Center vertically */
+    align-items: center;              /* Center horizontally */
+    text-align: center;               /* Ensure text stays centered */
+}
+
+/* Simple text style inside the result box */
+.result-box p {
+    font-size: 15px !important;       /* Force font size */
+    font-family: 'Times New Roman', serif; /* Corrected Font Type */
+    font-weight: bold;                /* Make text bold */
+    color: #333;                      /* Darker text color */
+    line-height: 1.8;                 /* Line height for better readability */
+    margin: 10px 0;                   /* Margin for spacing */
+    word-wrap: break-word;            /* Ensure text wraps properly */
+}

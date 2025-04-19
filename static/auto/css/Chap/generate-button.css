@@ -1,0 +1,24 @@
+/* Generate Button Styling */
+.generate-button {
+    background-color: blue;                           /* Background color */
+    color: white;                                     /* Text color */
+    font-size: 24px;                                  /* Font size */
+    font-family: 'Times New Roman', serif;           /* Font type */
+    padding: 14px 20px;                               /* Inner spacing */
+    border: 1px solid black;                          /* Thin black border */
+    border-radius: 10px;                              /* Rounded corners */
+    text-align: left;                                 /* Align text to the left */
+    cursor: pointer;                                  /* Pointer effect */
+    transition: background-color 0.3s ease-in-out;    /* Smooth hover */
+    width: 150px;                                     /* Fixed width */
+    display: inline-block;                            /* Inline layout */
+    position: absolute;                               /* Absolute for precision */
+    top: 970px;                                       /* Unified vertical level */
+    left: 950px;                                      /* Aligned with others */
+    z-index: 100;                                     /* Ensure it's above base elements */
+}
+
+/* Hover Effect */
+.generate-button:hover {
+    background-color: darkred;                        /* Hover color */
+}

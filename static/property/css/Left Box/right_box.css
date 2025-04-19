@@ -1,0 +1,26 @@
+/* Right Box Styling */
+.right-box {
+    width: 580px;                  /* Width for content */
+    height: 900px;                 /* Height for layout */
+    background-color: #f9f9f9;     /* Light background for a clean look */
+    border: 1px solid #ddd;        /* Light grey border for subtle design */
+    border-radius: 15px;           /* Rounded corners for smooth look */
+    position: absolute;
+    top: 300px;                    /* Matches left box top */
+    left: 910px;                   /* Aligned to the right side */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;                 /* Inner padding for content spacing */
+    text-align: left;              /* Left-aligned text */
+    z-index: 0;                    /* Behind elements like buttons */
+}
+
+/* Optional: Adding a green focus border */
+.right-box:focus-within {
+    border: 1px solid #4CAF50;     /* Green border on focus */
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Soft green glow */
+}
+
+/* Smooth transition for inner content */
+.right-box * {
+    transition: all 0.2s ease; /* Smooth animations */
+}

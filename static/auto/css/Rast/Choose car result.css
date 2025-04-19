@@ -1,0 +1,38 @@
+/* Selected Car Model Text Style with Animation */
+#selected-car {   
+    font-size: 24px;                     /* Slightly larger font size for better readability */
+    font-family: 'Times New Roman', serif; 
+    color: #333;                         /* Dark gray color for better contrast */
+    font-weight: bold;                   
+    text-align: left;                    /* Text aligned to the left */
+    margin-top: 10px;
+    position: absolute;                  
+    top: 860px;                           /* Align with the page */
+    left: 900px;                          /* Align with other elements */
+    
+    /* Add a subtle text shadow for depth */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);  
+    
+    /* Initial animation setup */
+    opacity: 0;                           /* Start with opacity 0 */
+    transform: translateX(-50px);         /* Start slightly left off screen */
+    transition: all 0.5s ease-out;        /* Smooth transition for all properties */
+}
+
+/* Animation to make it slide in from the left */
+#selected-car.visible {
+    opacity: 1;                           /* Fade in */
+    transform: translateX(0);             /* Slide to original position */
+}
+
+/* Hover effect to make it interactive */
+#selected-car:hover {
+    color: #007bff;                       /* Change color on hover */
+    text-shadow: 2px 2px 15px rgba(0, 123, 255, 0.5);  /* Blue shadow effect */
+    transform: scale(1.05);                /* Slight scale effect */
+}
+
+/* Add some smooth transitions */
+#selected-car, #selected-car:hover {
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}

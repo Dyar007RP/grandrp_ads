@@ -1,0 +1,45 @@
+/* Features Title Styling */
+.features-title-container {
+    font-size: 16px;                           /* Font size for text inside */
+    font-family: "Times New Roman", Times, serif; /* Set font family */
+    color: #007bff;                            /* Blue text color */
+    font-weight: bold;                         /* Bold text */
+    text-align: left;                          /* Align text to the left */
+    margin-bottom: 20px;                       /* Add space below */
+    position: absolute;                        /* Set position to absolute */
+    top: 600px;                                 /* Same level for all titles */
+    left: 290px;                               /* Same level for all titles */
+}
+
+/* Features Title Text Size */
+.features-title-container .features-title {
+    width: 100%;                               /* Full width */
+    font-size: 20px;                           /* Title font size */
+    font-family: "Times New Roman", Times, serif; /* Font family */
+    color: #007bff;                            /* Blue text color */
+    font-weight: bold;                         /* Bold text */
+    text-align: left;                          /* Align title text to the left */
+    margin-bottom: 20px;                       /* Add margin at the bottom */
+    animation: lightFlicker 3s infinite;       /* Slower flicker (3 seconds) */
+}
+
+/* Animation: Light Flicker (Turn on and off effect) */
+@keyframes lightFlicker {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    25% {
+        opacity: 0.5; /* Light dimmed */
+    }
+    50% {
+        opacity: 0; /* Turned off (invisible) */
+    }
+    75% {
+        opacity: 0.5; /* Light back on (dimmed) */
+    }
+}
+
+/* Optional: Add hover effect to enhance flicker when hovering */
+.features-title-container .features-title:hover {
+    animation: lightFlicker 1.5s infinite; /* Slower flicker on hover (1.5 seconds) */
+}

@@ -1,0 +1,14 @@
+/* Locations Text Styling */
+.locations-text-container {
+    text-align: center;  /* Center the text */
+    position: relative;
+    top: -170px;  /* Adjust vertical position */
+    left: -250px;  /* Adjust horizontal position */
+}
+
+.locations-text {
+    font-size: 20px;  /* Text size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    font-weight: bold; /* Bold text */
+    color: #000000; /* Black color */
+}

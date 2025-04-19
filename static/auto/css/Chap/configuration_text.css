@@ -1,0 +1,12 @@
+/* Configuration Title Styling */
+.configuration-title {
+    font-size: 20px;                          /* Title font size */
+    font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+    color: #000000;                           /* Black text color */
+    font-weight: bold;                        /* Make text bold */
+    text-align: left;                         /* Align text to the left */
+    margin-bottom: 20px;                      /* Add space below */
+    position: relative;
+    top: 70px;                                /* Move Down */
+    left: 355px;                             /* Move Right */
+}

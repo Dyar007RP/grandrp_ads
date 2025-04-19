@@ -1,0 +1,51 @@
+/* Switch Box Container */
+.switch-container {
+    position: absolute;
+    top: 785px;
+    left: 740px;
+    text-align: left;
+}
+
+/* Switch Box */
+#switchBox {
+    background-color: blue;
+    color: white;
+    font-size: 32px;
+    font-family: 'Times New Roman', serif;
+    padding: 12px 20px;
+    border: 2px solid #001f4d;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100px;                              /* Added width */
+    height: 35px;                              /* Added height */
+    display: inline-block;
+    margin: 10px 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    line-height: 36px;                         /* Vertical alignment helper */
+}
+
+/* Selling Mode */
+#switchBox.selling {
+    background-color: red;
+    transform: translateX(-5px);
+    border-color: #660000;
+}
+
+/* Buying Mode */
+#switchBox.buying {
+    background-color: green;
+    transform: translateX(5px);
+    border-color: #003300;
+}
+
+/* Hover Effect */
+#switchBox:hover {
+    background-color: darkblue;
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}

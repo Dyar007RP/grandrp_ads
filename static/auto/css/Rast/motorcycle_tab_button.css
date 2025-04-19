@@ -1,0 +1,26 @@
+/* === Motorcycle Tab Button Styling === */
+.motorcycle-tab-button {
+    position: absolute;                         /* Manual positioning */
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 120px;
+    height: 50px;
+    background-color: #28a745;                  /* Green for motorcycle */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;                           /* Align text to the left */
+
+    /* Positioning */
+    top: 350px;
+    left: 1250px;
+}
+
+/* === Hover Effect === */
+.motorcycle-tab-button:hover {
+    background-color: #218838;                  /* Darker green on hover */
+}

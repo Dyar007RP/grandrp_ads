@@ -1,0 +1,12 @@
+/* Search Bar Text Style */   
+.search-text {   
+    font-size: 20px;   
+    font-family: 'Times New Roman', serif;   
+    color: black;   
+    font-weight: bold;   
+    text-align: center;   
+    margin-bottom: 10px;   
+    position: relative;   
+    top: -1015px;   
+    left: 140px;   
+}   

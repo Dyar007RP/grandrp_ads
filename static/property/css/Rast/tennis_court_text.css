@@ -1,0 +1,11 @@
+/* Tennis Court Text Styling */
+.tennis-court-text {
+    font-size: 20px;  /* Text size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    font-weight: bold; /* Bold text */
+    color: #000000; /* Black color */
+    text-align: center; /* Center text */
+    position: relative;
+    top: -70px;  /* Move up/down */
+    left: -235px; /* Move left/right */
+}

@@ -1,0 +1,33 @@
+/* View Dropdown Box Styling */
+.view-dropdown {
+    font-size: 16px;  /* Font size for the dropdown */
+    font-family: "Times New Roman", Times, serif; /* Set font family */
+    color: #000000;  /* Text color */
+    font-weight: bold;  /* Bold text */
+    text-align: center;  /* Center the content */
+    margin-bottom: 20px;  /* Add space below */
+    position: relative;
+    top: -120px;  /* Move up or down */
+    left: 100px;  /* Move left or right */
+}
+
+/* View Dropdown Box Size */
+.view-dropdown select {
+    width: 150px;  /* Set width */
+    height: 30px;  /* Set height */
+    border: 1px solid black;  /* Add border for visibility */
+    text-align: center;  /* Align text to the center */
+    font-size: 16px;  /* Font size */
+    font-family: "Times New Roman", Times, serif; /* Font family */
+    font-weight: bold;  /* Bold text */
+    background-color: transparent;  /* Remove background color */
+    margin-top: 10px;  /* Add space above */
+    box-shadow: none;  /* Remove shadow */
+}
+
+/* Remove shadow when the dropdown is focused */
+.view-dropdown select:focus {
+    outline: none;  /* Remove default outline when focused */
+    border-color: #007BFF;  /* Change border color on focus */
+    box-shadow: none;  /* Remove shadow on focus */
+}

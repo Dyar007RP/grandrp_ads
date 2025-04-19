@@ -1,0 +1,123 @@
+/* Search Input Box Container */
+.search-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between input and toggle */
+    margin: 20px auto; /* Center it horizontally */
+    position: absolute; /* Allow movement */
+    top: 740px;  /* Move down */
+    left: 950px;  /* Move right */
+    z-index: 1000; /* Ensure visibility above other elements */
+}
+
+/* Search Input Box */
+.search-input-container input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    outline: none;
+    background-color: white;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Input Box Focus Effect */
+.search-input-container input:focus {
+    border-color: darkblue;
+}
+
+/* Toggle Switch Container */
+.toggle-container {
+    position: relative;
+    cursor: pointer;
+    z-index: 10; /* Ensure it's clickable */
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+/* Hide Default Checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Toggle Slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+/* Slider Circle */
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* Toggle ON State */
+.toggle-switch input:checked + .slider {
+    background-color: #007bff;
+}
+
+.toggle-switch input:checked + .slider:before {
+    transform: translateX(25px);
+}
+
+/* Search Results List */
+#results {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    border: none; /* Remove any border */
+    position: absolute;
+    background: white;
+    z-index: 1001;
+}
+
+/* Search Result Items */
+#results li {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none; /* Ensure no borders between items */
+    background: white; /* Ensure a clean background */
+}
+
+
+/* Search Result Items */
+#results li {
+    padding: 8px;
+    cursor: pointer; /* Change cursor to hand */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect: change background color to blue */
+#results li:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text for contrast */
+}

@@ -1,0 +1,48 @@
+/* Visual Upgrade Toggle Switch Second Styling - FIXED */
+.visual-upgrade-switch-second {
+    position: absolute;  /* ⬅️ Detach from normal flow */
+    top: 520px;           /* Adjust vertical position as needed */
+    left: 1200px;                                     /* Slightly right of generate */
+    display: inline-block;
+    width: 120px;         /* Toggle width */
+    height: 30px;         /* Toggle height */
+    z-index: 10;          /* Make sure it's clickable and on top */
+}
+
+.visual-upgrade-switch-second input { 
+    display: none;   /* Hide the checkbox */
+}
+
+/* Toggle Slider */
+.visual-upgrade-slider-second {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;  /* Gray when OFF */
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.visual-upgrade-slider-second:before {
+    content: "";
+    position: absolute;
+    height: 24px;  /* Circle size */
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* When checked, change background color and move the circle */
+input:checked + .visual-upgrade-slider-second {
+    background-color: #4CAF50;  /* Green when ON */
+}
+
+input:checked + .visual-upgrade-slider-second:before {
+    transform: translateX(30px);  /* Move the circle to the right */
+}

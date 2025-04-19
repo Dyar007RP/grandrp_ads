@@ -1,0 +1,20 @@
+/* Garage Dropdown Container Styling */
+.garage-dropdown-container {
+    position: absolute;         /* Absolute positioning */
+    top: 675px;                   /* Unified top alignment */
+    left: 650px;                  /* Unified left alignment */
+    text-align: left;           /* Align dropdown to left */
+    margin-top: 10px;           /* Space above */
+    z-index: 999;               /* Make sure it appears on top */
+}
+
+/* Garage Dropdown Styling */
+.garage-dropdown {
+    font-size: 18px;            
+    font-family: Arial, sans-serif;
+    padding: 5px 25px;          
+    border: 2px solid black;    
+    border-radius: 5px;         
+    background-color: white;    
+    cursor: pointer;            
+}

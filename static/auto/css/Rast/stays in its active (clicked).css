@@ -1,0 +1,23 @@
+/* Default styling for the tab buttons */
+.tab-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white; /* White background */
+    border: none;
+    color: black; /* Default black text */
+    font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Active tab styling */
+.tab-button.active {
+    background-color: #003366; /* Dark blue background for active tab */
+    color: white; /* White text for active tab */
+}
+
+/* Optional: Add hover effect */
+.tab-button:hover {
+    color: #003366; /* Change text color to dark blue on hover */
+    background-color: #f0f0f0; /* Light gray background on hover */
+}

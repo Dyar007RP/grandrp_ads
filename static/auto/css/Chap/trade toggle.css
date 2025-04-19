@@ -1,0 +1,44 @@
+/* Trade Toggle Switch Styling */
+.trade-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;  /* Toggle width */
+    height: 30px;  /* Toggle height */
+    top: 10px;   /* Adjust vertical position */
+    left: 630px;   /* Adjust horizontal position */
+}
+
+.trade-toggle-switch input { 
+    display: none;
+}
+
+/* Toggle Slider */
+.trade-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.trade-toggle-slider:before {
+    content: "";
+    position: absolute;
+    height: 24px;  /* Toggle circle size */
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* When checked, move the toggle to the right */
+input:checked + .trade-toggle-slider {
+    background-color: #4CAF50; /* Green when ON */
+}
+
+input:checked + .trade-toggle-slider:before {
+    transform: translateX(30px);  /* Move toggle circle */
+}

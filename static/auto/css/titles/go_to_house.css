@@ -1,0 +1,83 @@
+/* Go to House Button Style */
+.go-to-house {
+    position: absolute;
+    top: 860px;
+    left: 740px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Gradient */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 2px solid #003f80; /* Sharp edge */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+
+    width: 140px;   /* Ensure same width */
+    height: 55px;   /* Ensure same height */
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Lift effect */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+/* Hover Effect */
+.go-to-house:hover {
+    background: linear-gradient(135deg, #006400, #004d00); /* Dark green gradient */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); /* More depth */
+}
+
+/* Active (clicked) Effect */
+.go-to-house:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Shallow push effect */
+}
+
+/* Go to Auto Button Style */
+.go-to-auto-button {
+    position: absolute;
+    top: 860px;
+    left: 740px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Gradient */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 2px solid #003f80; /* Sharp edge */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+
+    width: 100px;   /* Ensure same width */
+    height: 35px;   /* Ensure same height */
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Lift effect */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+/* Hover Effect */
+.go-to-auto-button:hover {
+    background: linear-gradient(135deg, #006400, #004d00); /* Dark green gradient */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); /* More depth */
+}
+
+/* Active (clicked) Effect */
+.go-to-auto-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Shallow push effect */
+}

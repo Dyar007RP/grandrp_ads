@@ -1,0 +1,12 @@
+/* Property Type Title Styling */
+.property-type-title {
+    font-size: 20px;              /* Title font size */
+    font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+    color: #000000; /* Black text color */
+    font-weight: bold;            /* Make text bold */
+    text-align: left;             /* Align text to the left */
+    margin-bottom: 20px;          /* Add space below */
+    position: absolute;           /* Set position to absolute */
+    top: 350px;                    /* Move Up */
+    left: 330px;                    /* Align to left side */
+}

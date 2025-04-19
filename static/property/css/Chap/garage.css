@@ -1,0 +1,12 @@
+/* Garage Text Styling */
+.garage-text {
+    font-size: 20px;              /* Text size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    font-weight: bold;            /* Bold text */
+    color: #000000;               /* Black color */
+    text-align: left;             /* Align text to the left */
+    margin-top: 15px;             /* Space above */
+    position: absolute;           /* Set position to absolute */
+    top: 675px;                    /* Align top consistently */
+    left: 330px;                  /* Align left consistently */
+}

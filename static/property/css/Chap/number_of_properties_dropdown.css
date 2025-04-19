@@ -1,0 +1,33 @@
+/* Number of Properties Dropdown Box Styling */
+.property-dropdown {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;            /* Align text left */
+    position: absolute;          /* Absolute for top-left precision */
+    top: 415px;                    /* Top edge */
+    left: 650px;                   /* Left edge */
+    margin: 0;                   /* Remove default margin */
+    z-index: 999;                /* Make sure it's visible above others */
+}
+
+/* Number of Properties Dropdown Box Size */
+.property-dropdown select {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Focus style */
+.property-dropdown select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: none;
+}

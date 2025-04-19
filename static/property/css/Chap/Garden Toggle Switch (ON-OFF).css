@@ -1,0 +1,44 @@
+/* Toggle Switch Styling */
+.switch {
+    position: absolute;           /* Changed to absolute for positioning */
+    display: inline-block;
+    width: 110px;                 /* Increased width */
+    height: 30px;                 /* Increased height */
+    top: 640px;                       /* Set top position to 0 */
+    left: 650px;                      /* Set left position to 0 */
+    text-align: left;             /* Align text to the left */
+}
+
+.switch input { 
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;          /* More rounded */
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 24px;                 /* Adjusted for better fit */
+    width: 24px;                  /* Adjusted size */
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* When checked, move the toggle to the right */
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);  /* Moves further right */
+}

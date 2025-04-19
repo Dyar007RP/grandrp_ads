@@ -1,0 +1,14 @@
+/* Warehouse (W.H.) Text Styling */
+.warehouse-text {
+    font-size: 20px;              /* Text size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    color: #000000;               /* Black text color */
+    font-weight: bold;            /* Make text bold */
+    text-align: left;             /* Align text to the left */
+    margin-bottom: 15px;          /* Add space below */
+    
+    /* Movement Control */
+    position: absolute;           /* Set position to absolute */
+    top: 715px;                    /* Align top consistently */
+    left: 330px;                  /* Align left consistently */
+}

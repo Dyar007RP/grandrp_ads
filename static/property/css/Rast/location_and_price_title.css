@@ -1,0 +1,45 @@
+/* Location & Price Title Container */
+.location-price-container {
+    font-size: 16px;  /* Font size */
+    font-family: "Times New Roman", Times, serif; /* Font */
+    color: #007bff;  /* Blue text color */
+    font-weight: bold;  /* Bold text */
+    text-align: center;  /* Center content */
+    margin-bottom: 20px;  /* Space below */
+    position: relative;
+    top: -100px;  /* Adjust vertical position */
+    left: -220px;  /* Adjust horizontal position */
+}
+
+/* Location & Price Title Styling */
+.location-price-container .location-price-title {
+    width: 100%;  /* Full width */
+    font-size: 20px;  /* Title size */
+    font-family: "Times New Roman", Times, serif; /* Font */
+    color: #007bff;  /* Blue text */
+    font-weight: bold;  /* Bold */
+    text-align: center;  /* Center text */
+    margin-bottom: 20px;  /* Margin at the bottom */
+    animation: lightFlicker 3s infinite;  /* Flicker effect */
+}
+
+/* Animation: Light Flicker */
+@keyframes lightFlicker {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    25% {
+        opacity: 0.5; /* Light dimmed */
+    }
+    50% {
+        opacity: 0; /* Turned off */
+    }
+    75% {
+        opacity: 0.5; /* Light back on */
+    }
+}
+
+/* Hover Effect: Faster Flicker */
+.location-price-container .location-price-title:hover {
+    animation: lightFlicker 1.5s infinite;
+}

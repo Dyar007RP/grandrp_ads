@@ -1,0 +1,15 @@
+/* Drift Kit Text Styling */
+.drift-kit-text-container { 
+    text-align: center;           /* Center the text */ 
+    position: absolute;           /* Use absolute for consistent placement */
+    top: 740px;    /* Align vertically with other toggles */
+    left: 362px;   /* Horizontal position */
+    z-index: 1;                   /* Ensure visibility */
+} 
+
+.drift-kit-text { 
+    font-size: 20px;              /* Text size */ 
+    font-family: "Times New Roman", Times, serif; /* Font style */ 
+    font-weight: bold;            /* Bold text */ 
+    color: #000000;               /* Black color */ 
+}

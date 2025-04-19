@@ -1,0 +1,48 @@
+/* Price Text Style */
+.price-text {
+    font-size: 20px;                       /* Font size */
+    font-family: 'Times New Roman', serif;  /* Font type */
+    color: black;                          /* Black text color */
+    font-weight: bold;                     /* Bold text */
+    text-align: center;                    /* Center content */
+    margin-bottom: 10px;                   /* Space below */
+    position: absolute;                    /* Unified positioning */
+    top: 300px;                             /* Match unified vertical level */
+    left: 940px;                           /* Match unified horizontal level */
+    z-index: 1;
+    padding: 10px 20px;                    /* Padding around the text */
+    border: 2px solid #00f;                /* Blue border for neon effect */
+    border-radius: 8px;                    /* Rounded corners */
+    overflow: hidden;                      /* Hide neon effect that goes beyond the box */
+    position: relative;
+    width: 160px;   /* Ensure same width */
+    height: 35px;   /* Ensure same height */
+    text-align: center;
+}
+
+/* Neon animation at the top */
+.price-text::before {
+    content: '';                            /* Create a pseudo-element */
+    position: absolute;                     /* Position at the top */
+    top: 0;
+    left: -100%;                             /* Start off-screen to the left */
+    width: 100%;                             /* Cover the width of the box */
+    height: 4px;                            /* Thin strip for neon effect */
+    background: #00f;                       /* Blue color for the neon glow */
+    box-shadow: 0 0 15px #00f, 0 0 30px #00f, 0 0 45px #00f, 0 0 60px #00f; /* Neon blue glow */
+    animation: neonMove 3s infinite alternate; /* Neon movement animation */
+
+}
+
+/* Animation for the neon effect to move from left to right and right to left */
+@keyframes neonMove {
+    0% {
+        left: -100%;                         /* Start from the left */
+    }
+    50% {
+        left: 100%;                         /* Move to the right */
+    }
+    100% {
+        left: -100%;                         /* Move back to the left */
+    }
+}

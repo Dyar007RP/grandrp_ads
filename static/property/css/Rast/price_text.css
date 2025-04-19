@@ -1,0 +1,12 @@
+/* Price Text Style */
+.price-text {
+    font-size: 20px;                /* Font size */
+    font-family: 'Times New Roman', serif; /* Font type */
+    color: black;                   /* Black text color */
+    font-weight: bold;              /* Bold text */
+    text-align: center;             /* Center content */
+    margin-bottom: 10px;            /* Space below */
+    position: relative;             /* Allows movement */
+    top: -215px;                     /* Move Down */
+    left: -270px;                     /* Move Right */
+}

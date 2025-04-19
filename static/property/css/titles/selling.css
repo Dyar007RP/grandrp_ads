@@ -1,0 +1,18 @@
+/* Selling Title - Red Background with Movement */
+.selling-title {
+    background-color: red;        /* Red background */
+    color: white;                 /* White text */
+    padding: 33px 17px;           /* Padding for spacing */
+    font-size: 26px;              /* Font size */
+    font-family: "Times New Roman", Times, serif; /* Font type */
+    text-align: center;           /* Center text */
+    font-weight: bold;            /* Bold text */
+    border-radius: 20px;           /* Rounded edges */
+    width: fit-content;           /* Fit the text width */
+    margin: 18px auto;            /* Center horizontally */
+    
+    /* Movement Settings */
+    position: relative;  /* Allows movement */
+    top: -5px;           /* Move Down (Positive = Down, Negative = Up) */
+    left: 0px;          /* Move Right (Positive = Right, Negative = Left) */
+}

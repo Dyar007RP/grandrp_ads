@@ -1,0 +1,50 @@
+/* Visual Upgrade Toggle Switch Styling */
+.visual-upgrade-switch {
+    position: absolute;   /* Use absolute to avoid interference with other elements */
+    display: inline-block;
+    width: 120px;  /* Toggle width */
+    height: 30px;  /* Toggle height */
+    top: 600px;    /* Align vertically with other toggles */
+    left: 630px;   /* Horizontal position */
+    pointer-events: auto;   /* Ensures the toggle is clickable */
+    z-index: 1;    /* Ensure it appears above other elements */
+}
+
+
+.visual-upgrade-switch input { 
+    display: none;   /* Hide the checkbox */
+}
+
+/* Toggle Slider */
+.visual-upgrade-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;  /* Gray when OFF */
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.visual-upgrade-slider:before {
+    content: "";
+    position: absolute;
+    height: 24px;  /* Circle size */
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* When checked, change background color and move the circle */
+input:checked + .visual-upgrade-slider {
+    background-color: #4CAF50;  /* Green when ON */
+}
+
+input:checked + .visual-upgrade-slider:before {
+    transform: translateX(30px);  /* Move the circle to the right */
+}

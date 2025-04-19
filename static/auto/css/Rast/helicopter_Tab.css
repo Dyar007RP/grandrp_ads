@@ -1,0 +1,25 @@
+/* === Helicopter Tab Button Styling === */
+.helicopter-tab-button { 
+    position: absolute;                           /* Use absolute for manual placement */
+    font-size: 20px;  
+    font-family: "Times New Roman", Times, serif;  
+    font-weight: bold;  
+    padding: 10px 20px;  
+    width: 120px;  
+    height: 50px;  
+    color: white;  
+    background-color: #007BFF;                    /* Add background color */
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease;  
+
+    /* Adjusted positioning */
+    top: 350px;                                     /* Replace -1300px with suitable value */
+    left: 1030px;                                  /* Offset from main tab-button */
+}
+
+/* === Hover Effect === */
+.helicopter-tab-button:hover {
+    background-color: #0056b3;
+}

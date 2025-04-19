@@ -1,0 +1,20 @@
+/* Swimming Pool Text Styling */
+.swimming-pool-text-container {
+    text-align: center;  /* Center the text */
+    position: relative;
+    top: -87px;  /* Adjust vertical position */
+    left: -225px;   /* Adjust horizontal position */
+}
+
+.swimming-pool-text {
+    font-size: 20px;  /* Text size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    font-weight: bold; /* Bold text */
+    color: #000000; /* Black color */
+    transition: all 0.3s ease-in-out; /* Smooth transition for movement */
+}
+
+/* Optional: If you want the text to move when hovered */
+.swimming-pool-text-container:hover .swimming-pool-text {
+    transform: translateX(10px);  /* Move text to the right when hovered */
+}

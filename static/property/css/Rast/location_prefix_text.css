@@ -1,0 +1,14 @@
+/* Location Prefix Text Styling */
+.location-prefix-container {
+    text-align: center;  /* Center the text */
+    position: relative;
+    top: -125px;  /* Adjust vertical position */
+    left: -225px;   /* Adjust horizontal position */
+}
+
+.location-prefix-text {
+    font-size: 20px;  /* Text size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    font-weight: bold; /* Bold text */
+    color: #000000; /* Black color */
+}

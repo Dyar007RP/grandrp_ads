@@ -1,0 +1,25 @@
+/* Left Box Styling */
+/* Left Box Basic Styling */
+.left-box {
+    width: 610px;                  /* Increased width */
+    height: 900px;                 /* Increased height */
+    background-color: #f9f9f9;    /* Light background for a clean look */
+    border: 1px solid #ddd;       /* Light grey border for subtlety */
+    border-radius: 15px;           /* Rounded corners for a soft look */
+    position: absolute;
+    top: 300px;                    /* Moves the box up */
+    left: 250px;                   /* Moves the box to the left */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;                 /* Inner padding for spacing */
+}
+
+/* Optional: Adding a gradient border effect */
+.left-box:focus-within {
+    border: 1px solid #4CAF50;     /* Green border when the box is in focus */
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Soft green glow */
+}
+
+/* Adding a subtle transition effect for smooth interaction */
+.left-box * {
+    transition: all 0.2s ease; /* Apply smooth transitions to child elements */
+}

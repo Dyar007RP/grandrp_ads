@@ -1,0 +1,28 @@
+/* Warehouse Dropdown Container Styling */
+.warehouse-dropdown-container {
+    position: absolute;          /* Set position to absolute */
+    top: 715px;                    /* Align top */
+    left: 650px;                   /* Align left */
+    text-align: left;            /* Align dropdown to left */
+    margin-top: 10px;            /* Space above */
+    z-index: 999;                /* Ensure it appears on top */
+}
+
+/* Warehouse Dropdown Styling */
+.warehouse-dropdown {
+    font-size: 16px;             
+    padding: 8px 14px;           
+    border: 2px solid black;     
+    border-radius: 6px;          
+    cursor: pointer;             
+    background-color: #ffffff;   
+}
+
+/* Dropdown Arrow Customization */
+.warehouse-dropdown::-ms-expand {
+    display: none;  /* Hide default arrow in Internet Explorer */
+}
+
+.warehouse-dropdown:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+}

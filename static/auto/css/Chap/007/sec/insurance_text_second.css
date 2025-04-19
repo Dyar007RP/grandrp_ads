@@ -1,0 +1,16 @@
+/* Insurance Text Styling - Aligned and Clean */
+.insurance-text-container-second {
+    position: absolute;            /* Use absolute for unified layout */
+    top: 540px;                    /* Unified vertical position */
+    left: 950px;                   /* Unified left */
+    text-align: left;              /* Align text to the left */
+    pointer-events: none;         /* Prevents blocking interaction */
+    z-index: 1;                    /* Keep below active elements */
+}
+
+.insurance-text-second {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #000000;
+}

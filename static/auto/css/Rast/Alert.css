@@ -1,0 +1,77 @@
+/* Custom Alert */
+#custom-alert {
+    position: fixed;
+    top: 50%;                            /* Center vertically */
+    left: 50%;                           /* Center horizontally */
+    transform: translate(-50%, -50%);    /* Apply centering effect */
+    
+    background-color: #f44336;           /* Red background for alert */
+    color: white;                        /* White text for contrast */
+    padding: 20px 30px;                  /* Add padding for content */
+    font-size: 24px;                     /* Larger text size */
+    font-family: 'Times New Roman', serif; /* Elegant font */
+    border-radius: 8px;                  /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow around alert */
+    z-index: 9999;                       /* Ensure alert is on top */
+    width: 320px;                        /* Fixed width */
+    text-align: center;                  /* Center text inside */
+    opacity: 0;                          /* Initially hidden */
+    visibility: hidden;                  /* Ensure hidden */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Top and Bottom Parts of the Alert */
+#custom-alert-top,
+#custom-alert-bottom {
+    font-weight: bold;                  /* Bold text for clarity */
+    font-size: 20px;                    /* Slightly smaller font */
+    margin: 5px 0;                      /* Space between top and bottom */
+}
+
+/* Show Alert */
+#custom-alert.show {
+    opacity: 1;                         /* Make alert visible */
+    visibility: visible;                /* Ensure alert is visible */
+    transform: translate(-50%, -50%) scale(1.05); /* Slight scaling for emphasis */
+    animation: fadeInAlert 0.5s ease-in-out forwards; /* Fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeInAlert {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Hover Effect (if necessary) */
+#custom-alert:hover {
+    background-color: #d32f2f;         /* Darker red on hover */
+    cursor: pointer;                   /* Pointer cursor on hover */
+}
+
+/* Hidden Alert (when not active) */
+.hidden {
+    display: none;
+}
+
+/* Optional: Alert Close Button (if you want to include it) */
+#custom-alert-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    opacity: 0.8;
+}
+
+#custom-alert-close:hover {
+    opacity: 1;
+}

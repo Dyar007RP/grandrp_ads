@@ -1,0 +1,73 @@
+/* House and Apartments Title Styling */
+.house-title {
+    font-size: 55px;              /* Title font size */
+    font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+    color: #4CAF50;               /* Green text color */
+    font-weight: bold;            /* Make text bold */
+    text-align: center;           /* Center the title */
+    margin-bottom: 20px;          /* Add space below */
+}
+
+/* Move Title Up, Down, Left, Right */
+.house-title {
+    position: relative;
+    top: -20px;                   /* Move Up */
+    left: 20px;                   /* Move Right */
+}
+
+/* Fade In & Out Animation */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Apply Fade In & Out Animation */
+.house-title {
+    animation: fadeInOut 3s infinite;
+}
+
+/* Bounce Effect Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Apply Bounce Effect */
+.house-title {
+    animation: bounce 1.5s infinite;
+}
+
+/* Slide In from Left Animation */
+@keyframes slideIn {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Apply Slide In Animation */
+.house-title {
+    animation: slideIn 1s ease-out;
+}
+
+/* Text Color Changing Animation */
+@keyframes colorChange {
+    0% { color: #4CAF50; }  /* Green */
+    50% { color: #ff5733; } /* Orange */
+    100% { color: #4CAF50; }  /* Back to Green */
+}
+
+/* Apply Color Changing Animation */
+.house-title {
+    animation: colorChange 2s infinite;
+}
+
+/* Typing Effect Animation */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.house-title {
+    animation: fadeInOut 3s infinite;  /* 3 seconds, repeats forever */
+}

@@ -1,0 +1,34 @@
+/* Checkbox Number Box Styling */
+.checkbox-number-box-container {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;               /* Align text to the left */
+    position: absolute;            /* Absolute for precise placement */
+    top: 465px;
+    left: 650px;
+    margin: 0;
+    z-index: 999;                  /* Ensure visibility above others */
+}
+
+/* Number Input Box Size */
+.checkbox-number-box-container input[type="number"] {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Remove shadow and background on focus or hover */
+.checkbox-number-box-container input[type="number"]:focus,
+.checkbox-number-box-container input[type="number"]:hover {
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+}

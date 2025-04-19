@@ -1,0 +1,16 @@
+/* Visual Upgrade Text Styling */
+.visual-upgrade-text {
+    font-size: 20px;              /* Title font size */
+    font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+    color: #000000; /* Black text color */
+    font-weight: bold;            /* Make text bold */
+    text-align: center;           /* Center the title */
+    margin-bottom: 20px;          /* Add space below */
+    
+    position: absolute;           /* Use absolute positioning */
+    text-align: left;                      /* Centered text */
+    top: 580px;    /* Align vertically with other toggles */
+    left: 362px;   /* Horizontal position */
+    pointer-events: auto;         /* Ensures the text is clickable (if needed) */
+    z-index: 1;                   /* Ensure it is not behind other elements */
+}

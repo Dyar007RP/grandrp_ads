@@ -1,0 +1,18 @@
+/* Turbo Kit Text Container - Cleaned and Non-blocking */
+.turbo-kit-text-container-second {
+    text-align: left;                 /* Align text to the left */
+    position: absolute;              /* Use absolute for full control */
+    top: 620px;                      /* Unified top position */
+    left: 950px;                   /* Unified left */
+    pointer-events: none;           /* Prevents it from blocking clicks */
+    z-index: 1;                      /* Visible but beneath main controls */
+}
+
+/* Turbo Kit Text Styling */
+.turbo-kit-text-second {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #000000;
+    background-color: transparent;   /* Optional: prevent background conflicts */
+}

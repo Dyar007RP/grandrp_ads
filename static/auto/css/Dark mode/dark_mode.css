@@ -1,0 +1,72 @@
+/* Light Mode (Default) */
+:root {
+    --bg-light: #ffffff;
+    --text-light: #000000;
+    --box-light: #f1f1f1;
+    --button-light: #007bff;
+    --button-hover-light: #0056b3;
+
+    --bg-dark: #121212;
+    --text-dark: #ffffff;
+    --box-dark: #1e1e1e;
+    --button-dark: #0d6efd;
+    --button-hover-dark: #0a58ca;
+}
+
+/* Default Light Mode */
+body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Dark Mode for Elements */
+.dark-mode .title-box,
+.dark-mode .result-container {
+    background-color: var(--box-dark);
+}
+
+/* Button Styles */
+button {
+    background-color: var(--button-light);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-light);
+}
+
+/* Dark Mode Buttons */
+.dark-mode button {
+    background-color: var(--button-dark);
+}
+
+.dark-mode button:hover {
+    background-color: var(--button-hover-dark);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: var(--button-light);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.dark-mode .dark-mode-toggle {
+    background: var(--button-dark);
+}

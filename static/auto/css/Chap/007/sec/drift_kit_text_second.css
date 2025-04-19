@@ -1,0 +1,16 @@
+/* Drift Kit Text Styling - Unified Layout */
+.drift-kit-text-container_second { 
+    position: absolute;             /* Unified positioning */
+    top: 660px;                     /* Same vertical level as others */
+    left: 950px;                   /* Unified left */
+    text-align: left;              /* Align text left */
+    pointer-events: none;          /* Prevent blocking interactions */
+    z-index: 1;                    /* Ensure visibility but behind clickable */
+}
+
+.drift-kit-text_second { 
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #000000;
+}

@@ -1,0 +1,58 @@
+/* Toggle Group Container */
+.modern-toggle-group {
+    display: flex;
+    justify-content: flex-start;       /* Align items to the left */
+    align-items: center;
+    gap: 8px;
+    font-family: "Segoe UI", sans-serif;
+    position: absolute;
+    top: 425px;                        /* Unified with others */
+    left: 1200px;                     /* Unified with others */
+    z-index: 1;
+    animation: fadeInSlide 0.6s ease-in-out;
+}
+
+/* Hide Radio Inputs */
+.modern-toggle-group input[type="radio"] {
+    display: none;
+}
+
+/* Label Buttons */
+.modern-toggle-group label {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 6px 14px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+}
+
+/* Active Style */
+.modern-toggle-group input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    transform: scale(1.05);
+}
+
+/* Hover Effect */
+.modern-toggle-group label:hover {
+    background-color: #d0d0d0;
+    color: #000;
+}
+
+/* Fade Slide Animation */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

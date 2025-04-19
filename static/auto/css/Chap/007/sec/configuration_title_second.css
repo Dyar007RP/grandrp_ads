@@ -1,0 +1,26 @@
+/* Configuration Title Second Styling - Unified and Clean */
+.configuration-title-second {
+    position: absolute;               /* Unified positioning */
+    top: 410px;                       /* Align with drift-kit-switch-second */
+    left: 950px;                     /* Align horizontally with drift-kit-switch-second */
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;                /* Left-align text */
+    z-index: 1;
+    pointer-events: none;           /* Prevent blocking interactions */
+    animation: fadeInSlide 0.7s ease-in-out;
+}
+
+/* Optional Fade-In Slide Animation */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

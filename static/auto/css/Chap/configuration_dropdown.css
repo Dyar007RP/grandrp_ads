@@ -1,0 +1,49 @@
+/* === General Positioning Variables === */
+:root {
+    --switch-left: 625px;
+    --base-top: 20px;
+}
+
+/* === Configuration Switch Container === */
+.configuration-switch {
+    display: flex;
+    justify-content: flex-start;  /* Left align instead of center */
+    gap: 10px;
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
+    top: var(--base-top);
+    left: var(--switch-left);     /* Use positive value */
+}
+
+/* === Hide Radio Buttons === */
+.configuration-switch input[type="radio"] {
+    display: none;
+}
+
+/* === Label Buttons === */
+.configuration-switch label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 35px;
+}
+
+/* === Active State === */
+.configuration-switch input[type="radio"]:checked + label {
+    background-color: #007BFF;
+    color: white;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+    border-color: #0056b3;
+}
+
+/* === Hover State === */
+.configuration-switch label:hover {
+    background-color: #d6e6ff;
+}

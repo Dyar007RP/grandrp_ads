@@ -1,0 +1,63 @@
+/* Copy Button Styles */
+.copy-button {
+    background-color: orange;                         /* Orange background */
+    color: white;                                     /* White text */
+    font-size: 24px;                                  /* Font size */
+    font-family: 'Times New Roman', serif;            /* Font style */
+    padding: 50px 10px;                               /* Tall vertical button */
+    height: 135px;                                     /* Fixed height */
+    border: 1px solid black;                          /* Thin black border */
+    border-radius: 10px;                              /* Rounded corners */
+    text-align: center;                               /* Center the text */
+    cursor: pointer;                                  /* Pointer cursor */
+    transition: background-color 0.3s ease-in-out;    /* Smooth hover effect */
+    width: 135px;                                     /* Narrow button */
+    display: inline-block;                            /* Inline layout */
+    margin: 10px 5px;                                 /* Button margin */
+    position: absolute;                               /* Absolute for precision */
+    top: 955px;                                       /* Match unified vertical level */
+    left: 735px;                                      /* Horizontal offset */
+    z-index: 2;                                       /* Above other content */
+}
+
+/* Hover Effect */
+.copy-button:hover {
+    background-color: darkgreen;                      /* Hover to dark green */
+}
+
+/* Active Effect */
+.copy-button:active {
+    transform: scale(0.95);                           /* Small press effect */
+}
+
+
+/* Enhanced & Enlarged Notification Box */
+.copy-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Bright gradient */
+    color: #ffffff;
+
+    padding: 24px 48px;               /* Larger padding */
+    border-radius: 14px;
+    font-size: 24px;                  /* Bigger font */
+    font-family: 'Times New Roman', serif;  /* Updated font */
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+
+    box-shadow: 0 0 35px rgba(0, 123, 255, 0.6), 0 0 20px rgba(0, 123, 255, 0.4);
+    opacity: 0;
+    z-index: 9999;
+
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Show Animation */
+.copy-notification.show {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(1.08);
+}

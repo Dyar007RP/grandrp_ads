@@ -1,0 +1,11 @@
+/* Long Driveway Text Styling */
+.long-driveway-text {
+    font-size: 20px;  /* Text size */
+    font-family: "Times New Roman", Times, serif; /* Font style */
+    font-weight: bold; /* Bold text */
+    color: #000000; /* Black color */
+    text-align: center; /* Center text */
+    position: relative;
+    top: -90px;  /* Move up/down */
+    left: -225px; /* Move left/right */
+}

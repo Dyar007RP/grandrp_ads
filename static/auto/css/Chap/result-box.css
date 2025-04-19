@@ -1,0 +1,39 @@
+/* Result Box Styling */
+.result-box {
+    /* Box Appearance */
+    background-color: #f0f0f0;             /* Light gray background */
+    color: black;                          /* Black text color */
+    padding: 20px;                         /* Inner spacing */
+    border-radius: 8px;                    /* Rounded corners */
+    border: 1px solid #ddd;                /* Light border */
+    width: 24vw;                            /* Use viewport width for dynamic resizing */
+    max-width: 400px;                       /* Max width to prevent growing too large */
+    min-width: 200px;                       /* Min width to prevent shrinking too small */
+    height: 100px;                         /* Vertical height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+
+    /* Movement Settings */
+    position: absolute;                    /* Absolute positioning */
+    top: 962px;                             /* Match unified vertical level */
+    left: 260px;                            /* Match unified horizontal level */
+    z-index: 1;
+
+    /* Content & Layout */
+    overflow-y: auto;                      /* Scroll if content overflows */
+    display: flex;                         /* Flexbox layout */
+    flex-direction: column;               /* Stack children vertically */
+    justify-content: center;              /* Center content vertically */
+    align-items: center;                  /* Center content horizontally */
+    text-align: center;                   /* Center text */
+}
+
+/* Simple text style inside the result box */
+.result-box p {
+    font-size: 15px !important;                   /* Font size */
+    font-family: 'Times New Roman', serif;        /* Font */
+    font-weight: bold;                            /* Bold text */
+    color: #333;                                  /* Darker text */
+    line-height: 1.8;                             /* Better readability */
+    margin: 10px 0;                               /* Vertical spacing */
+    word-wrap: break-word;                        /* Wrap long words */
+}

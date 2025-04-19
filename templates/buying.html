@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House and Apartments</title>
+    <style>
+.locked-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Adjust size */
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+    user-select: none; /* Prevent text selection */
+    cursor: not-allowed; /* Show disabled cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+        .garden-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Style for the buttons */
+        .buying-button {
+    width: 200px;
+    height: 50px;
+    background-color: red; /* Updated color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+        .buying-button:hover {
+            background-color: darkblue;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: auto;
+            min-height: 100vh;
+            justify-content: flex-start;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .section h3 {
+            color: #007bff;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        select, input[type="text"], input[type="checkbox"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .reset-button {
+            background-color: #dc3545;
+        }
+
+        .reset-button:hover {
+            background-color: #c82333;
+        }
+
+        .result-container {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .result-container h3 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .result-container p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .result-container button {
+            width: auto;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #28a745;
+            border-radius: 6px;
+        }
+
+        .result-container button:hover {
+            background-color: #218838;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .additional-features-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .additional-features-container h3 {
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .buying-button {
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-left: auto;
+        }
+
+        .buying-button:hover {
+            background-color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>House and Apartments</h1>
+<div class="locked-checkbox">Buying</div>
+
+<button class="buying-button" style="background-color: red;" onclick="window.location.href='/house_and_apartments'">Go to Selling</button>
+
+    <div class="container">
+        
+        <div class="section">
+            <h3>Property Details</h3>
+            <label for="number_of_properties">Number of Properties</label>
+<select id="number_of_properties">
+    <option value="1">1</option>
+    <option value="2">2</option>
+
+    <!-- You can add more options as needed -->
+</select>
+
+            <label for="property_type">Property Type</label>
+            <select id="property_type">
+                <option value="House">House</option>
+                <option value="Apartment">Apartment</option>
+            </select>
+
+            <label for="property_number">Property Number</label>
+            <input type="text" id="property_number" oninput="addNumberSymbol(this)">
+
+            <h3>Features</h3>
+            <div class="checkbox-group">
+
+                <!-- Garden as just a checkbox without dropdown -->
+                <label><input type="checkbox" id="garden-checkbox"> Garden</label>
+
+                <label for="warehouse_count">Warehouse (w.h.)</label>
+                <select id="warehouse_count">
+                    <option value="">None</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                </select>
+
+                <!-- Garage dropdown added here -->
+                <label for="garage_count">Garage Count</label>
+                <select id="garage_count">
+                    <option value="">None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="additional-features-container">
+                <h3>Additional Features</h3>
+            </div>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="insurance"> Insurance</label>
+                <label><input type="checkbox" id="helipad"> Helipad</label>
+                <label><input type="checkbox" id="tennis_court"> Tennis Court</label>
+                <label><input type="checkbox" id="long_driveway"> Long Driveway</label>
+                <label><input type="checkbox" id="swimming_pool"> Swimming Pool</label>
+            </div>
+
+            <h3>Location & Price</h3>
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Enter location (Optional)">
+
+            <label for="price">Price/Budget</label>
+            <input type="text" id="price" placeholder="Negotiable">
+
+            <div class="button-group">
+                <button type="button" onclick="generateAd()">Generate</button>
+                <button type="button" class="reset-button" onclick="resetForm()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-container" id="resultContainer">
+        <h3>Generated Ad</h3>
+        <p id="generatedAd"></p>
+        <button onclick="copyToClipboard()">Copy</button>
+    </div>
+
+    <script>
+        function addNumberSymbol(input) {
+            input.value = input.value.replace(/^№+/, "");
+        }
+
+        function generateAd() {
+    let propertyType = document.getElementById("property_type").value.toLowerCase();
+    let propertyNumber = document.getElementById("property_number").value.trim();
+    let location = document.getElementById("location").value.trim();
+    let price = document.getElementById("price").value.trim() || "Negotiable";
+    let numberOfProperties = document.getElementById("number_of_properties").value;
+
+    let features = [];
+    if (document.getElementById("garden-checkbox").checked) features.push("a garden");
+    let warehouse = document.getElementById("warehouse_count").value;
+    if (warehouse) features.push(`${warehouse} w.h.`);
+    let garage = document.getElementById("garage_count").value;
+    if (garage) features.push(`${garage} garage(s)`);
+
+    let extraFeatures = [];
+    if (document.getElementById("insurance").checked) extraFeatures.push("insurance");
+    if (document.getElementById("helipad").checked) extraFeatures.push("helipad");
+    if (document.getElementById("tennis_court").checked) extraFeatures.push("tennis court");
+    if (document.getElementById("long_driveway").checked) extraFeatures.push("long driveway");
+    if (document.getElementById("swimming_pool").checked) extraFeatures.push("swimming pool");
+
+    // Check if no details are selected (features and property number are empty)
+    if (!propertyNumber && !location && features.length === 0 && extraFeatures.length === 0) {
+        // Default message when no details are selected
+        let adText = `Selling a ${propertyType}. Price: ${price}.`;
+        document.getElementById("generatedAd").innerText = adText;
+    } else {
+        // Create the ad with all selected details
+        let adText = `Selling ${numberOfProperties} ${propertyType.charAt(0).toUpperCase() + propertyType.slice(1)}(s) #${propertyNumber} located at ${location}, ${price}. Features: ${features.join(", ")}. Additional features: ${extraFeatures.join(", ")}.`;
+        document.getElementById("generatedAd").innerText = adText;
+    }
+
+    document.getElementById("resultContainer").style.display = "block";
+}
+
+
+
+
+        function resetForm() {
+            document.getElementById("property_type").value = "House";
+            document.getElementById("property_number").value = "";
+            document.getElementById("location").value = "";
+            document.getElementById("price").value = "Negotiable";
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
+            document.getElementById("resultContainer").style.display = "none";
+        }
+
+        function copyToClipboard() {
+            let textToCopy = document.getElementById("generatedAd").innerText;
+            navigator.clipboard.writeText(textToCopy);
+        }
+    </script>
+</body>
+</html>

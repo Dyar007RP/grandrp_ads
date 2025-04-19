@@ -1,0 +1,37 @@
+/* Property Details Title Styling */
+.property-details-title-container {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    color: #007bff;
+    font-weight: bold;
+    text-align: left;                /* Align to left */
+    margin-bottom: 20px;
+    position: absolute;              /* Changed to absolute positioning */
+    top: 300px;                       /* Adjust top position */
+    left: 290px;                     /* Adjust left position */
+}
+
+/* Property Details Title Text */
+.property-details-title-container .property-details-title {
+    width: 100%;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: #007bff;
+    font-weight: bold;
+    text-align: left;               /* Align to left */
+    margin-bottom: 20px;
+    animation: lightFlicker 3s infinite;
+}
+
+/* Flicker Animation */
+@keyframes lightFlicker {
+    0%, 100% { opacity: 1; }
+    25% { opacity: 0.5; }
+    50% { opacity: 0; }
+    75% { opacity: 0.5; }
+}
+
+/* Hover Flicker Boost */
+.property-details-title-container .property-details-title:hover {
+    animation: lightFlicker 1.5s infinite;
+}
